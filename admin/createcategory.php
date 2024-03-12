@@ -7,7 +7,7 @@
         <input type="text" placeholder="Enter Category Name" name="categoryname" class="w-full p-2 border rounded-lg shadow my-2">
 
         <div class="flex justify-center gap-2 mt-5">
-            <button type="submit" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow">Add Category</button>
+            <button name="store" type="submit" class="bg-blue-600 text-white px-5 py-2 rounded-lg shadow">Add Category</button>
             <a href="categories.php" class="bg-red-600 text-white px-8 py-2 rounded-lg shadow">Exit</a>
         </div>
     </form>
