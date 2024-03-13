@@ -1,4 +1,5 @@
 <?php 
+session_start();
 if(isset($_POST['store']))
 {
     $priority = $_POST['priority'];
@@ -9,6 +10,7 @@ if(isset($_POST['store']))
     $res = mysqli_query($conn, $qry);
     include 'closeconnection.php';
     if($res) {
+        $_SESSION['msg'] = "Category Created Successfully";
         header('location: categories.php');
     } else {
         echo "Failed to add category";
@@ -28,6 +30,7 @@ if(isset($_POST['update']))
     $res = mysqli_query($conn, $qry);
     include 'closeconnection.php';
     if($res) {
+        $_SESSION['msg'] = "Category Updated Successfully";
         header('location: categories.php');
     } else {
         echo "Failed to update category";
@@ -43,6 +46,7 @@ if(isset($_GET['deleteid']))
     $res = mysqli_query($conn, $qry);
     include 'closeconnection.php';
     if($res) {
+        $_SESSION['msg'] = "Category Deleted Successfully";
         header('location: categories.php');
     } else {
         echo "Failed to delete category";
