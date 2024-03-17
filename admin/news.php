@@ -29,8 +29,8 @@ include 'closeconnection.php';
             <td class="p-2 border"><?php echo $row['description']; ?></td>
             <td class="p-2 border"><?php echo $row['categoryname']; ?></td>
             <td class="p-2 border">
-                <a href="" class="bg-blue-600 text-white px-4 py-1 mx-1 rounded-lg">Edit</a>
-                <a onclick="return confirm('Are you sure to delete?')" href="" class="bg-red-600 text-white px-4 py-1 mx-1 rounded-lg">Delete</a>
+                <a href="editnews.php?id=<?php echo $row['id'];?>" class="bg-blue-600 text-white px-4 py-1 mx-1 rounded-lg">Edit</a>
+                <a onclick="return confirm('Are you sure to delete?')" href="actionnews.php?deleteid=<?php echo $row['id'];?>" class="bg-red-600 text-white px-4 py-1 mx-1 rounded-lg">Delete</a>
             </td>
         </tr>
         <?php } ?>

@@ -33,7 +33,7 @@
                 <a href="dashboard.php" class="text-lg pl-5 border-b block py-2 mt-1 hover:bg-blue-500 hover:text-white">Dashboard</a>
                 <a href="categories.php" class="text-lg pl-5 border-b block py-2 mt-1 hover:bg-blue-500 hover:text-white">Categories</a>
                 <a href="news.php" class="text-lg pl-5 border-b block py-2 mt-1 hover:bg-blue-500 hover:text-white">News</a>
-                <a href="" class="text-lg pl-5 border-b block py-2 mt-1 hover:bg-blue-500 hover:text-white">Logout</a>
+                <a href="logout.php" class="text-lg pl-5 border-b block py-2 mt-1 hover:bg-blue-500 hover:text-white">Logout</a>
             </div>
         </nav>
         <div class="flex-1 p-4">
