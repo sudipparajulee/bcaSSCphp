@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php include 'header.php'; 
+// $qry = "SELECT * FROM packages LIMIT 3";
+// include 'admin/dbconnection.php';
+// $resultpackages = mysqli_query($conn, $qry);
+// include 'admin/closeconnection.php';
+?>
       <!-- Slider main container -->
 <div class="swiper swiper1">
     <!-- Additional required wrapper -->
@@ -103,6 +108,7 @@
         <p class="text-center text-gray-600">Enjoy your time with our wonderful packages</p>
 
         <div class="grid grid-cols-3 gap-10 p-14">
+            <?php //while($rowpackage = mysqli_fetch_assoc($resultpackages)) { ?>
             <div class="bg-white hover:scale-105 duration-300 animate__animated animate__fadeInUp wow">
                 <img src="https://mmatnepal.com/public/packages/VbSBYex4qLjU48HITyxb.jpg" alt="">
                 <div class="flex justify-between items-center py-4 px-2">
@@ -110,22 +116,9 @@
                     <p>3 Nights/ 4 days</p>
                 </div>
             </div>
+            <?php //} ?>
 
-            <div class="bg-white hover:scale-105 duration-300">
-                <img src="https://mmatnepal.com/public/packages/VbSBYex4qLjU48HITyxb.jpg" alt="">
-                <div class="flex justify-between items-center py-4 px-2">
-                    <h2 class="font-bold text-2xl">Bhutan Tour</h2>
-                    <p>3 Nights/ 4 days</p>
-                </div>
-            </div>
-
-            <div class="bg-white hover:scale-105 duration-300">
-                <img src="https://mmatnepal.com/public/packages/VbSBYex4qLjU48HITyxb.jpg" alt="">
-                <div class="flex justify-between items-center py-4 px-2">
-                    <h2 class="font-bold text-2xl">Bhutan Tour</h2>
-                    <p>3 Nights/ 4 days</p>
-                </div>
-            </div>
+            
 
             
         </div>
